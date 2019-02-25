@@ -36,6 +36,10 @@ endef
 
 $(eval $(call add-qca6574-symlink,$(qca6574_dst_dir)/athwlan.bin,qwlan30.bin))
 $(eval $(call add-qca6574-symlink,$(qca6574_dst_dir)/athsetup.bin,otp.bin))
+$(eval $(call add-qca6574-symlink,$(qca6574_dst_dir)/wlan/wlan_mac0,/proc/device-tree/wireless/mac-address))
+$(eval $(call add-qca6574-symlink,$(qca6574_dst_dir)/wlan/wlan_mac1,/proc/device-tree/wireless/mac-address1))
+$(eval $(call add-qca6574-symlink,$(qca6574_dst_dir)/wlan/wlan_mac2,/proc/device-tree/wireless/mac-address2))
+$(eval $(call add-qca6574-symlink,$(qca6574_dst_dir)/wlan/wlan_mac3,/proc/device-tree/wireless/mac-address3))
 
 qca6574_dst_dir :=
 
