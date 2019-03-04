@@ -19,10 +19,14 @@ endef
 
 qca6574_dst_dir := $(TARGET_OUT_VENDOR)/firmware
 
+# Wi-Fi firmware
 $(call add-qca6574-prebuilt-file,qca6574_proprietary/qwlan30.bin,$(qca6574_dst_dir),qwlan30.bin,qwlan30)
 $(call add-qca6574-prebuilt-file,qca6574_proprietary/fakeboar.bin,$(qca6574_dst_dir),fakeboar.bin,fakeboar)
 $(call add-qca6574-prebuilt-file,qca6574_proprietary/otp.bin,$(qca6574_dst_dir),otp.bin,otp)
 $(call add-qca6574-prebuilt-file,qca6574_proprietary/utf.bin,$(qca6574_dst_dir),utf.bin,utf)
+# Bluetooth firmware
+$(call add-qca6574-prebuilt-file,qca6574_bt/nvm_tlv_3.2.bin,$(qca6574_dst_dir),nvm_tlv_3.2.bin,nvm_tlv)
+$(call add-qca6574-prebuilt-file,qca6574_bt/rampatch_tlv_3.2.tlv,$(qca6574_dst_dir),rampatch_tlv_3.2.tlv,rampatch_tlv)
 
 define add-qca6574-symlink
 $(1):
