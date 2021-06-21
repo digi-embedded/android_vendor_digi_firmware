@@ -21,12 +21,12 @@ qca65X4_dst_dir := $(TARGET_OUT_VENDOR)/firmware
 # Wi-Fi firmware
 ifeq ($(QCACLD_WIFI_INTERFACE), sdio)
 $(call add-qca65X4-prebuilt-file,qca65X4_proprietary/sdio/qwlan30.bin,$(qca65X4_dst_dir),qwlan30.bin,qwlan30)
-$(call add-qca65X4-prebuilt-file,qca65X4_proprietary/sdio/bdwlan30_US.bin,$(qca65X4_dst_dir),bdwlan30.bin,bdwlan30)
+$(call add-qca65X4-prebuilt-file,qca65X4_proprietary/sdio/bdwlan30.bin,$(qca65X4_dst_dir),bdwlan30.bin,bdwlan30)
 $(call add-qca65X4-prebuilt-file,qca65X4_proprietary/sdio/otp30.bin,$(qca65X4_dst_dir),otp30.bin,otp30)
 $(call add-qca65X4-prebuilt-file,qca65X4_proprietary/sdio/utf30.bin,$(qca65X4_dst_dir),utf30.bin,utf30)
 else ifeq ($(QCACLD_WIFI_INTERFACE), pci)
 $(call add-qca65X4-prebuilt-file,qca65X4_proprietary/pci/qwlan30.bin,$(qca65X4_dst_dir),qwlan30.bin,qwlan30)
-$(call add-qca65X4-prebuilt-file,qca65X4_proprietary/pci/bdwlan30_US.bin,$(qca65X4_dst_dir),bdwlan30.bin,bdwlan30)
+$(call add-qca65X4-prebuilt-file,qca65X4_proprietary/pci/bdwlan30.bin,$(qca65X4_dst_dir),bdwlan30.bin,bdwlan30)
 $(call add-qca65X4-prebuilt-file,qca65X4_proprietary/pci/otp30.bin,$(qca65X4_dst_dir),otp30.bin,otp30)
 $(call add-qca65X4-prebuilt-file,qca65X4_proprietary/pci/utf.bin,$(qca65X4_dst_dir),utf.bin,utf)
 else
